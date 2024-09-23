@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FORMS</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <form class="form">
+                <div class="switch">
+                    <input type="checkbox" class="input__switch" id="sw">
+                    <label class="label__switch" for="sw">
+                        <span class="enter">Enter</span>
+                        <span class="go_to_sign__up">Sign up</span>
+                    </label>
+                </div>
+                <h1 class="title">Enter</h1>
+                <div class="inputs">
+                    <input type="email" name="email" class="input__email" placeholder="Enter your email" required>
+                    <input type="password" name="password" class="input__password" placeholder="Password" required>
+                </div>
+                <div class="desc">
+                    <div class="checkbox">
+                        <input type="checkbox" class="input__check" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="hint"><a href="#">Forget your password?</a></div>
+                </div>
+                <button class="btn"><a href="#">Enter</a></button>
+                <div class="account">
+                    <div class="account__text">Don't have an account?</div>
+                    <div class="sign__up"><a href="#">Sign up</a></div>
+                </div>
+                <div class="log__in">Or log in through</div>
+                <div class="icons">
+                    <div class="icon">
+                        <a href="#">
+                            <svg><use href="img/sprites.svg#facebook"></use></svg>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <svg><use class="la" href="img/sprites.svg#instagram"></use></svg>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <svg><use href="img/sprites.svg#linkedin"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

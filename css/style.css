@@ -1,0 +1,245 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.woff), url(../fonts/Roboto-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #ededed;
+    display: block;
+    cursor: pointer;
+}
+
+.main {
+    background: url(../img/bg.jpg) no-repeat 100% / cover;
+    /* position: relative;
+    height: 777px; */
+}
+
+.container {
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.form {
+    width: 496px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 78px;
+}
+
+.switch {
+    margin: 60px 0 75px;
+}
+
+.input__switch {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.label__switch {
+    display: flex;
+    width: 340px;
+    height: 36px;
+    border: 2px solid #03045e;
+    border-radius: 30px;
+    box-shadow: inset 0 0 6px 0 #333333;
+    position: relative;
+    cursor: pointer;
+}
+
+.label__switch::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 2px;
+    background: #03045e;
+    border-radius: 30px;
+    width: 168px;
+    height: 28.5px;
+}
+
+.input__switch:checked + .label__switch::before {
+    left: auto;
+    right: 2px;
+}
+
+.label__switch .enter, .label__switch .go_to_sign__up {
+   flex: 1 1 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 29px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 0 21px;
+}
+
+.input__email, .input__password {
+    border: 1px solid #03045e;
+    border-radius: 30px;
+    background: #d8d8d8;
+    width: 340px;
+    height: 44px;
+    padding: 15px 0 15px 20px;
+    color: #03045e;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 0 0 30px;
+}
+
+.input__check {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+    width: 0;
+}
+
+.checkbox label {
+    display: inline-block;
+    padding: 5px 5px 5px 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox label::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ededed;
+}
+
+.input__check:checked+label::before {
+    background: #03045e;
+}
+
+.input__check:checked+label::after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 5px;
+    width: 6px;
+    height: 12px;
+    border-bottom: 2px solid #ededed;
+    border-right: 2px solid #ededed;
+    transform: rotate(38deg);
+}
+
+.hint a {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hint a:hover {
+    text-decoration: overline;
+}
+
+.btn {
+    border-radius: 30px;
+    background: #03045e;
+    padding: 15px 153px;
+    text-align: center;
+    margin: 0 0 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow: inset 0 0 10px 0 #03045e;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0 30px;
+}
+
+.account__text {
+}
+
+.sign__up {
+    text-decoration: underline;
+}
+
+.sign__up:hover {
+    text-decoration: overline;
+}
+
+.log__in {
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 171px;
+}
+
+.icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all .3s linear;
+    line-height: 10px;
+}
+
+.icon svg {
+    height: 20px;
+    width: 20px;
+    fill: #ededed;
+}
+
+.icon a:hover {
+    background: #03045e;  
+}
